@@ -1,29 +1,28 @@
-﻿<Window
-    x:Class="QuanLyKho.MainWindow"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-    xmlns:local="clr-namespace:QuanLyKho"
-    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:uc="clr-namespace:QuanLyKho.UserControlThuan"
-    Name="mainWindow"
-    Title="Phan mem quan ly kho"
-    Width="625"
-    Height="500"
-    Background="{DynamicResource MaterialDesignPaper}"
-    DataContext="{StaticResource MainVM}"
-    FontFamily="{DynamicResource MaterialDesignFont}"
-    ResizeMode="NoResize"
-    TextElement.FontSize="13"
-    TextElement.FontWeight="Regular"
-    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-    TextOptions.TextFormattingMode="Ideal"
-    TextOptions.TextRenderingMode="Auto"
-    WindowStartupLocation="CenterScreen"
-    WindowStyle="None"
-    mc:Ignorable="d">
+﻿<Window x:Class="QuanLyKho.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:local="clr-namespace:QuanLyKho"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:QuanLyKho.UserControlThuan"
+        Name="mainWindow"
+        Title="Phan mem quan ly kho"
+        Width="625"
+        Height="500"
+        Background="{DynamicResource MaterialDesignPaper}"
+        DataContext="{StaticResource MainVM}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        ResizeMode="NoResize"
+        TextElement.FontSize="13"
+        TextElement.FontWeight="Regular"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        mc:Ignorable="d">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <i:InvokeCommandAction Command="{Binding LoadedWindowCommand}" />
@@ -44,22 +43,28 @@
             </Grid.RowDefinitions>
             <!--  memu  -->
             <Grid Grid.Row="0">
-                <StackPanel
-                    HorizontalAlignment="Stretch"
-                    VerticalAlignment="Stretch"
-                    Background="Transparent"
-                    Orientation="Horizontal">
+                <StackPanel HorizontalAlignment="Stretch"
+                            VerticalAlignment="Stretch"
+                            Background="Transparent"
+                            Orientation="Horizontal">
                     <StackPanel.Resources>
                         <Style TargetType="Button">
-                            <Setter Property="Margin" Value="2,4,2,4" />
-                            <Setter Property="Width" Value="90" />
-                            <Setter Property="Height" Value="50" />
-                            <Setter Property="Background" Value="LightCyan" />
+                            <Setter Property="Margin"
+                                    Value="2,4,2,4" />
+                            <Setter Property="Width"
+                                    Value="90" />
+                            <Setter Property="Height"
+                                    Value="50" />
+                            <Setter Property="Background"
+                                    Value="LightCyan" />
                         </Style>
                         <Style TargetType="materialDesign:PackIcon">
-                            <Setter Property="Width" Value="24" />
-                            <Setter Property="Height" Value="24" />
-                            <Setter Property="HorizontalAlignment" Value="Center" />
+                            <Setter Property="Width"
+                                    Value="24" />
+                            <Setter Property="Height"
+                                    Value="24" />
+                            <Setter Property="HorizontalAlignment"
+                                    Value="Center" />
                         </Style>
                     </StackPanel.Resources>
                     <Button ToolTip="Nhap Kho">
@@ -69,7 +74,8 @@
                                 <RowDefinition />
                             </Grid.RowDefinitions>
                             <Grid Grid.Row="0">
-                                <TextBlock HorizontalAlignment="Center" Text="Nhap Kho" />
+                                <TextBlock HorizontalAlignment="Center"
+                                           Text="Nhap Kho" />
                             </Grid>
                             <Grid Grid.Row="1">
                                 <materialDesign:PackIcon Kind="ArrowDownBoldCircleOutline" />
@@ -83,7 +89,8 @@
                                 <RowDefinition />
                             </Grid.RowDefinitions>
                             <Grid Grid.Row="0">
-                                <TextBlock HorizontalAlignment="Center" Text="Xuat Kho" />
+                                <TextBlock HorizontalAlignment="Center"
+                                           Text="Xuat Kho" />
                             </Grid>
                             <Grid Grid.Row="1">
                                 <materialDesign:PackIcon Kind="ArrowUpBoldCircleOutline" />
@@ -97,7 +104,8 @@
                                 <RowDefinition />
                             </Grid.RowDefinitions>
                             <Grid Grid.Row="0">
-                                <TextBlock HorizontalAlignment="Center" Text="Vat Tu" />
+                                <TextBlock HorizontalAlignment="Center"
+                                           Text="Vat Tu" />
                             </Grid>
                             <Grid Grid.Row="1">
                                 <materialDesign:PackIcon Kind="DipSwitch" />
@@ -111,7 +119,8 @@
                                 <RowDefinition />
                             </Grid.RowDefinitions>
                             <Grid Grid.Row="0">
-                                <TextBlock HorizontalAlignment="Center" Text="Don vi do" />
+                                <TextBlock HorizontalAlignment="Center"
+                                           Text="Don vi do" />
                             </Grid>
                             <Grid Grid.Row="1">
                                 <materialDesign:PackIcon Kind="Altimeter" />
@@ -125,7 +134,8 @@
                                 <RowDefinition />
                             </Grid.RowDefinitions>
                             <Grid Grid.Row="0">
-                                <TextBlock HorizontalAlignment="Center" Text="Nha cung cap" />
+                                <TextBlock HorizontalAlignment="Center"
+                                           Text="Nha cung cap" />
                             </Grid>
                             <Grid Grid.Row="1">
                                 <materialDesign:PackIcon Kind="Factory" />
@@ -139,7 +149,8 @@
                                 <RowDefinition />
                             </Grid.RowDefinitions>
                             <Grid Grid.Row="0">
-                                <TextBlock HorizontalAlignment="Center" Text="Khach hang" />
+                                <TextBlock HorizontalAlignment="Center"
+                                           Text="Khach hang" />
                             </Grid>
                             <Grid Grid.Row="1">
                                 <materialDesign:PackIcon Kind="HumanHandsup" />
@@ -155,7 +166,100 @@
                     <RowDefinition />
                 </Grid.RowDefinitions>
                 <!--  filter  -->
-                <Grid Grid.Row="0" />
+                <Grid Grid.Row="0">
+                    <materialDesign:Card Margin="5">
+                        <Grid Grid.Row="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition Height="auto"></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <DatePicker Width="100" HorizontalAlignment="Left"
+                                                materialDesign:HintAssist.Hint="Ngay bat dau"
+                                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                                Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                                </Grid>
+                                <Grid Grid.Column="1">
+                                    <DatePicker Width="100"
+                                                HorizontalAlignment="Left"
+                                                materialDesign:HintAssist.Hint="Ngay bat dau"
+                                                materialDesign:TextFieldAssist.HasClearButton="True"
+                                                Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
+                                </Grid>
+                                <Grid Grid.Column="2">
+                                    <Button Width="{StaticResource ButtonWidth}"
+                                            Content="Loc"
+                                            IsEnabled="{Binding DataContext.ControlsEnabled, RelativeSource={RelativeSource FindAncestor, AncestorType=Window}}"
+                                            Style="{StaticResource MaterialDesignRaisedButton}"
+                                            ToolTip="Resource name: MaterialDesignRaisedButton" />
+                                </Grid>
+                            </Grid>
+                            <Grid Grid.Row="1">
+                                <Separator Margin="5"></Separator>
+                            </Grid>
+                            <Grid Grid.Row="2">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <Grid Grid.Column="0">
+                                    <materialDesign:Card Width="200"
+                                                         Padding="0"
+                                                         Background="#03a9f4"
+                                                         Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <TextBlock Grid.Row="0"
+                                                       Margin="16,16,16,4"
+                                                       Style="{StaticResource MaterialDesignHeadline5TextBlock}"
+                                                       Text="Call Jennifer" />
+                                            <Separator Grid.Row="1"
+                                                       Style="{StaticResource MaterialDesignLightSeparator}" />
+                                            <TextBlock Grid.Row="2"
+                                                       Margin="16,0,16,8"
+                                                       HorizontalAlignment="Left"
+                                                       VerticalAlignment="Center"
+                                                       Style="{StaticResource MaterialDesignBody2TextBlock}"
+                                                       Text="March 19, 2016" />
+                                            <StackPanel Grid.Row="2"
+                                                        Margin="16,0,16,8"
+                                                        HorizontalAlignment="Right"
+                                                        Orientation="Horizontal">
+                                                <Button Width="30"
+                                                        Padding="2,0,2,0"
+                                                        HorizontalAlignment="Right"
+                                                        materialDesign:RippleAssist.IsCentered="True"
+                                                        Style="{StaticResource MaterialDesignToolForegroundButton}">
+                                                    <materialDesign:PackIcon Kind="Phone" />
+                                                </Button>
+                                                <materialDesign:PopupBox Padding="2,0,2,0"
+                                                                         HorizontalAlignment="Right"
+                                                                         Style="{StaticResource MaterialDesignToolForegroundPopupBox}">
+                                                    <StackPanel>
+                                                        <Button Content="More" />
+                                                        <Button Content="Options" />
+                                                    </StackPanel>
+                                                </materialDesign:PopupBox>
+                                            </StackPanel>
+                                        </Grid>
+                                    </materialDesign:Card>
+                                </Grid>
+                            </Grid>
+                        </Grid>
+                    </materialDesign:Card>
+                </Grid>
                 <!--  list  -->
                 <Grid Grid.Row="1" />
             </Grid>
