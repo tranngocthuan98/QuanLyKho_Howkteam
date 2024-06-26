@@ -19,6 +19,7 @@ namespace QuanLyKho
         public MainWindow()
         {
             InitializeComponent();
+            Console.WriteLine("xin chao");
         }
     }
 }
